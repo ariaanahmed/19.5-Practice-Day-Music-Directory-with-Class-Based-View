@@ -1,0 +1,6 @@
+![1](https://github.com/ariaanahmed/19.5-Practice-Day-Music-Directory-with-Class-Based-View/assets/121677432/9ea0f86d-cbba-4ad7-ad0f-5ec77d6898ae)
+![2](https://github.com/ariaanahmed/19.5-Practice-Day-Music-Directory-with-Class-Based-View/assets/121677432/3bc114c5-85ad-4dbc-914c-8ae24e1a3f1d)
+![3](https://github.com/ariaanahmed/19.5-Practice-Day-Music-Directory-with-Class-Based-View/assets/121677432/8fd2adf7-c877-4ffc-80c3-b52359511c7d)
+![4](https://github.com/ariaanahmed/19.5-Practice-Day-Music-Directory-with-Class-Based-View/assets/121677432/2b066a5f-e2aa-4592-8008-b4a6d3bd7c96)
+![5](https://github.com/ariaanahmed/19.5-Practice-Day-Music-Directory-with-Class-Based-View/assets/121677432/2eed54d3-d767-4c6b-b8d6-1148af6f2e35)
+![6](https://github.com/ariaanahmed/19.5-Practice-Day-Music-Directory-with-Class-Based-View/assets/121677432/17539908-7030-4235-a940-5e6820c410a4)
