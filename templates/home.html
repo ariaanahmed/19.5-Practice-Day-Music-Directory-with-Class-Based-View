@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% if messages %}
+    {% for msg in messages %}
+      <p class="text-center py-1 bg-light fw-bold text-success">{{ msg }}</p>
+    {% endfor %}
+  {% endif %}
+
+  <h1>Home</h1>
+
+  <div>
+    <table class="table text-center border">
+      <thead>
+        <tr>
+          <th scope="col" class="border">ID</th>
+          <th scope="col" class="border">Musician name</th>
+          <th scope="col" class="border">Email</th>
+          <th scope="col" class="border">Album Rating</th>
+          <th scope="col" class="border">Instrument</th>
+          <th scope="col" class="border">Album name</th>
+          <th scope="col" class="border">Release date</th>
+          <th scope="col" class="border">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for data in combined_data %}
+          <tr>
+            <th scope="row">{{ data.counter }}</th>
+            <td class="border">{{ data.musician.first_name }} {{ data.musician.last_name }}</td>
+            <td class="border">{{ data.musician.email }}</td>
+            <td class="border">{{ data.album.rating }}</td>
+            <td class="border">{{ data.musician.instrument }}</td>
+            <td class="border">{{ data.album.album_title }}</td>
+            <td class="border">{{ data.album.release_date|date:"d-M-Y" }}</td>
+            <td class="border">
+              {% if user.is_authenticated %}
+                <button><a class="text-decoration-none" href="{% url 'EditPost' data.album.id %}">Edit</a></button>
+                <button><a href="{% url 'album_delete' data.album.id %}">Delete</a></button>
+              {% else %}
+                <button disabled><a class="text-decoration-none nav-link" href="">Edit</a></button>
+                <button disabled><a class="text-decoration-none nav-link" href="">Delete</a></button>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}

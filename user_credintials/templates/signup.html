@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+  {% if messages %}
+    {% for msg in messages %}<h6 {% if msg.tags %} class="text-center bg-light py-3 container" {% endif %}>{{ msg|safe }}</h6>{% endfor %}
+  {% endif %}
+
+  <h4 class="text-center py-3 text-secondary">{{type}}</h4>
+  <div class="border p-3">
+    <form method="post">
+      {% csrf_token %}
+      <!-- {{form|crispy}} -->
+      {{ form|crispy }}
+      <button type="submit">Sign up</button>
+    </form>
+  </div>
+{% endblock %}
